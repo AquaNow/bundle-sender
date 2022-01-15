@@ -2,13 +2,13 @@
 
 ## Project Overview
 
-Institutions often make hundreds if not thousands of transactions in a day and often a single transaction for only 1 transfer, for instance, address A to address B with this much ETH or ERC20 token. These transactions are costly, time consuming, and prone to error. One standard ETH transfer costs 21000 gas, however this does not have to be the case if transfers are batched. Below is the plot for gas consumption against number of transfers and it can be observed that there is a significant difference on gas consumption if transfers were batched.
+Institutions often make hundreds if not thousands of transactions in a day and often a single transaction for only 1 transfer, for instance, address A to address B with this much ETH or ERC20 token. These transactions are costly, time-consuming, and prone to error. One standard ETH transfer costs 21000 gas, however, this does not have to be the case if transfers are batched.
 
-Our solution involves a smart contract that can be invoke to perform ETH and ERC20 toke batch transfer. The contract has functions such as batchEtherTransfer and batchERC20transfer that can be invoked externally to transfer assets. This contract does not store any balances and relies in the fact that only the person who have the rightful private keys can invoke batch transfer. With this, institutions can use any wallet they desire as long as it supports smart contract interaction transactions. With this smart contract, institutions does not necessarily have to create transaction for every single transfer which save them time and costs. 
+Our solution involves a smart contract that can be invoked to perform ETH and ERC20 token batch transfers. The contract has functions such as batchETHTransfer and batchERC20Transfer that can be invoked externally to transfer assets. This contract does not store any balances and relies on the fact that only the person who has the rightful private keys can invoke batch transfers. With this, institutions can use any wallet they desire as long as it supports smart contract interaction transactions. With this smart contract, institutions do not necessarily have to create transactions for every single transfer which saves them time and costs. 
 
 ## Interaction
 
-The Batching Utility Smart Contract have two functions: one for batching ETH transfers (batchETHTransfers) and the other for ERC20 batch transfers (batchERC20Transfers).
+The Bundle Sender Smart Contract has two functions: one for batching ETH transfers (batchETHTransfer) and the other for ERC20 batch transfers (batchERC20Transfer).
 
 Our testnet deployment (Rinkeby) is in address: "0x1aADd8A69b19cBef4D6F7D81FbDA28fcDC149Ba3"
 
@@ -47,7 +47,7 @@ npx hardhat run scripts/upgrade.js --network rinkeby
 
 ## Disclaimer
 
-We are not liable for any lost or stolen assets. Private key security is solely the responsible of the user. The Batching Utility Smart Contract will not store any assets and will only be used for utility purposes.
+We are not liable for any lost or stolen assets. Private key security is solely the responsible of the user. The Bundle Sender Smart Contract will not store any assets and will only be used for utility purposes.
 
 ## License
-MIT License Copyright (c) 2022 AquaNow
+MIT License Copyright (c) 2022 Aquanow
