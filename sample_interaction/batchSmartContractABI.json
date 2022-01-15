@@ -1,0 +1,81 @@
+[
+	{
+		"inputs": [],
+		"name": "balance",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address[]",
+				"name": "recipients",
+				"type": "address[]"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "values",
+				"type": "uint256[]"
+			}
+		],
+		"name": "batchTransfer",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "deposit",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address payable[]",
+				"name": "_contributors",
+				"type": "address[]"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "_balances",
+				"type": "uint256[]"
+			}
+		],
+		"name": "batchETHTransfer",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "token",
+				"type": "address"
+			},
+			{
+				"internalType": "address[]",
+				"name": "_contributors",
+				"type": "address[]"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "_balances",
+				"type": "uint256[]"
+			}
+		],
+		"name": "batchERC20Transfer",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	}
+]
