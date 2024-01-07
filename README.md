@@ -44,7 +44,6 @@ We use OpenZeppelin upgradability toolkit. It allows us to deploy the contract w
 npx hardhat run scripts/upgrade.js --network rinkeby
 ```
 
-
 ## Disclaimer
 
 We are not liable for any lost or stolen assets. Private key security is solely the responsibility of the user. The Bundle Sender Smart Contract will not store any assets and will only be used for utility purposes.
