@@ -49,4 +49,4 @@ npx hardhat run scripts/upgrade.js --network rinkeby
 We are not liable for any lost or stolen assets. Private key security is solely the responsibility of the user. The Bundle Sender Smart Contract will not store any assets and will only be used for utility purposes.
 
 ## License
-MIT License Copyright (c) 2022 Aquanow
+MIT License Copyright (c) 2024 Aquanow
