@@ -7,7 +7,7 @@ const private_key_test = "private_key of user_address_test";
 
 const erc20TokenAddress = "0xc778417e063141139fce010982780140aa0cd5ab"; // WETH
 
-const web3Provider = "https://rinkeby.infura.io/v3/<API Secret Key>";
+const web3Provider = "https://sepolia.infura.io/v3/<API Secret Key>";
 
 const listOfAddresses = [
   "0xEthereumAddress1",
